@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { CoverDiv, Line, LineWrapper } from "../components/StyledComponent";
 
 const CoverComponent = ({ array, intervalTime }) => {
@@ -7,9 +7,12 @@ const CoverComponent = ({ array, intervalTime }) => {
 
   console.log(width);
 
-  function changeIndex() {
-    setActiveIndex((current) => (current + 1) % array.length);
-  }
+  const changeIndex = useCallback(
+    (args) => {
+      setActiveIndex((current) => (current + 1) % array.length);
+    },
+    [array.length]
+  );
 
   function changeWidth() {
     setWidth((current) => (current === 100 ? 0 : current + 2));
@@ -21,7 +24,7 @@ const CoverComponent = ({ array, intervalTime }) => {
     }, intervalTime);
 
     return () => clearInterval(intervalID);
-  }, []);
+  }, [changeIndex, intervalTime]);
   useEffect(() => {
     let intervalID = setInterval(() => {
       changeWidth();

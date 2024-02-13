@@ -6,23 +6,23 @@ import {
   TitleDiv,
   StyledLink,
 } from "../components/StyledComponent";
-import ICONS from "../constants/icons";
+// import ICONS from "../constants/icons";
 import ProjectComponent from "../components/ProjectComponent";
 import { ProjectsData } from "../constants/projects";
-import CoverComponent from "../components/CoverComponent";
+// import CoverComponent from "../components/CoverComponent";
 import TestComponents from "../components/TestComponent";
 
-const ImageArr = [
-  ICONS.AfterFooterImage1,
-  ICONS.AfterFooterImage2,
-  ICONS.AfterFooterImage3,
-];
+// const ImageArr = [
+//   ICONS.AfterFooterImage1,
+//   ICONS.AfterFooterImage2,
+//   ICONS.AfterFooterImage3,
+// ];
 
 const scrollUp = () => {
   window.scrollTo(0, 0);
 };
 
-let component = <CoverComponent array={ImageArr} intervalTime={5000} />;
+// let component = <CoverComponent array={ImageArr} intervalTime={5000} />;
 function Home() {
   return (
     <WholeWrapper>

@@ -7,7 +7,6 @@ import {
   DivWrapper,
   Span,
   ParagraphWrapper,
-  LineAbout,
 } from "../components/StyledComponent";
 
 const AboutCompany = () => {

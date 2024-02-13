@@ -1,6 +1,6 @@
 import Home from "../pages/Home";
 import GlobalStyles from "../GlobalStyles";
-import Header from "../components/Header";
+// import Header from "../components/Header";
 import { Route } from "react-router-dom";
 import ProjectDetails from "../pages/ProjectDetails.js";
 import Footer from "../components/Footer";

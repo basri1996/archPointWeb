@@ -8,8 +8,6 @@ import {
   Div,
   ProjectTitleDiv,
   ButtonDiv,
-  Prev,
-  Next,
   StyledIcon,
 } from "./StyledComponent";
 import { useEffect, useRef, useState } from "react";

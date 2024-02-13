@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 import { ProjectsData } from "../constants/projects";
-import CoverComponent from "../components/CoverComponent";
+// import CoverComponent from "../components/CoverComponent";
 import Header from "../components/Header";
 import { useState } from "react";
 import { ButtonDiv, CoverDiv, StyledIcon } from "../components/StyledComponent";
